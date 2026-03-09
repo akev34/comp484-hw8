@@ -1,0 +1,195 @@
+/* -----------------------------------
+COLOR PALETTE
+Primary: #1F3C88
+Accent: #5893D4
+Light: #F5F7FA
+Highlight: #F49D37
+Dark Text: #1A1A1A
+----------------------------------- */
+
+
+/* ===================================
+   BOX MODEL FIX (HW7 Requirement)
+=================================== */
+
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+
+/* ===================================
+   GLOBAL STYLES
+=================================== */
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F5F7FA;
+    color: #1A1A1A;
+    line-height: 1.6;
+}
+
+/* Content Wrapper */
+.content-wrap {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden; /* Clears floats */
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+header {
+    background-color: #1F3C88;
+    color: white;
+}
+
+/* Remove extra spacing between name & tagline */
+header h1,
+header h2 {
+    margin: 0;
+}
+
+/* Profile image */
+.profile-img {
+    border-radius: 50%;
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+
+/* ===================================
+   TYPOGRAPHY
+=================================== */
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 0;
+}
+
+
+/* ===================================
+   SECTIONS
+=================================== */
+
+section:first-of-type {
+    background-color: #5893D4;
+    color: white;
+}
+
+section:last-of-type {
+    background-color: #F49D37;
+}
+
+
+/* ===================================
+   COLUMNS (HW7 Requirement)
+=================================== */
+
+.column-narrow {
+    width: 30%;
+    float: left;
+    padding-right: 3%;
+    min-height: 175px;
+}
+
+.column-wide {
+    width: 70%;
+    float: left;
+    min-height: 225px;
+}
+
+
+/* ===================================
+   LISTS
+=================================== */
+
+ul {
+    padding-left: 20px;
+}
+
+
+/* ===================================
+   FOOTER
+=================================== */
+
+footer {
+    background-color: #1F3C88;
+    color: white;
+    text-align: center;
+}
+
+.contact-info a {
+    padding: 10px;
+    display: inline-block;
+    color: #F49D37;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ===============================
+   NAVIGATION (HW8)
+================================ */
+
+nav {
+    background-color: white;
+    text-align: center;
+    padding: 15px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+nav a {
+    margin: 0 20px;
+    text-decoration: none;
+    color: #1F3C88;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #F49D37;
+}
+
+/* Prevent header from hiding under fixed nav */
+body {
+    padding-top: 80px;
+}
+
+/* ===============================
+   EDUCATION PARALLAX BACKGROUND
+================================ */
+#education {
+    position: relative;
+    background: 
+        linear-gradient(
+            rgba(0, 0, 0, 0.7),
+            rgba(0, 0, 0, 0.7)
+        ),
+        url("../images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+    color: white;
+    position: relative;
+}
